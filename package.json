@@ -1,0 +1,10 @@
+{
+  "name": "security",
+  "version": "1.0.0",
+  "main": "cesarCipher.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node cesarCipher.js"
+  },
+  "type": "module"
+}
