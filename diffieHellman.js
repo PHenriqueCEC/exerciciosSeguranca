@@ -6,6 +6,7 @@ function power(a, b, p) {
 // Chaves publicas e privadas
 var P, G, x, a, y, b, ka, kb;
 
+// Compartilhado entre os dois
 P = 30803;
 G = 9;
 
@@ -13,12 +14,14 @@ G = 9;
 a = 4;
 
 // Gerando uma chave com P e G
+// Essa chave será compartilhada com a Bob para gerar a chave secreta
 x = power(G, a, P);
 
 // Chave privada do Bob
 b = 3;
 
 // Gerando uma chave com P e G
+// Essa chave será compartilhada com a Alice para gerar a chave secreta
 y = power(G, b, P);
 
 // Gerando a chave secreta
